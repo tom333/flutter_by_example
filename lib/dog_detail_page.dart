@@ -44,7 +44,7 @@ class _DogDetailPageState extends State<DogDetailPage>{
         ],
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(widget.dog.imageUrl),
+          image: NetworkImage(widget.dog.imageUrl ?? ''),
         ),
       ),
     );
